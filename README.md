@@ -1,6 +1,6 @@
 # CrimeLens – Forensic Homicide Investigation Suite
 
-## 🎯 Project Overview
+## Project Overview
 CrimeLens is a premium, glass‑morphic web‑application designed for **real‑time forensic investigation of homicide cases**.  It provides investigators with a modern UI, a powerful backend, and a seamless workflow for:
 - **Creating new investigations** with multiple pieces of forensic evidence (photos, descriptions).
 - **Storing and visualising evidence** on a map that automatically re‑centers to the investigator’s location.
@@ -11,7 +11,7 @@ The UI follows a **glass‑morphism** design language: subtle translucency, vibr
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 | Layer | Tech | Reason |
 |-------|------|--------|
 | Front‑end | **React** (Vite), **Lucide‑React** icons, **CSS** (custom design system) | Fast SPA, modern component model, easy theming |
@@ -24,7 +24,7 @@ The UI follows a **glass‑morphism** design language: subtle translucency, vibr
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 ```
 CrimeLens/
 ├─ client/                    # React front‑end
@@ -48,7 +48,7 @@ CrimeLens/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 ### Prerequisites
 - **Node.js ≥ 18**
 - **npm** (or **yarn**)  
@@ -86,7 +86,7 @@ Open the URL, log in (or register), and you’ll land on the **Dashboard**.
 
 ---
 
-## 📚 API Overview
+## API Overview
 All endpoints are prefixed with `/api`.
 
 ### Authentication (`/api/auth`)
@@ -118,7 +118,7 @@ All endpoints are prefixed with `/api`.
 
 ---
 
-## 🗂️ Data Models (Mongoose)
+## Data Models (Mongoose)
 ### User
 ```js
 {
@@ -166,7 +166,7 @@ All endpoints are prefixed with `/api`.
 ```
 ---
 
-## 🖼️ Front‑End Component Map
+## Front‑End Component Map
 | Component | Purpose |
 |-----------|---------|
 | **CasesPage** | List, filter, and launch the *NewCaseModal*; displays case cards |
@@ -179,7 +179,7 @@ All endpoints are prefixed with `/api`.
 
 ---
 
-## 📦 Workflow – Creating a New Investigation
+Workflow – Creating a New Investigation
 ```mermaid
 flowchart TD
     A[Click "New Case" button] --> B[Open NewCaseModal]
@@ -209,7 +209,7 @@ flowchart TD
 
 ---
 
-## 🎨 Design System (CSS Variables)
+## Design System (CSS Variables)
 ```css
 :root {
   --bg-primary: #0a0a0f;
@@ -231,7 +231,7 @@ All components reference these variables to guarantee a cohesive, premium experi
 
 ---
 
-## 🛡️ Security & Permissions
+## Security & Permissions
 - **JWT** is verified on every request by `middleware/auth.js`.
 - Routes are protected with `router.use(authMiddleware);`.
 - Only the `createdBy` user can edit/delete their own cases (future RBAC can be added).
@@ -239,7 +239,7 @@ All components reference these variables to guarantee a cohesive, premium experi
 
 ---
 
-## 📈 Future Enhancements
+## Future Enhancements
 - Replace the mock `analysisService` with **YOLO‑v8** + **Gemini Vision** for automatic object detection.
 - Real‑time WebSocket updates for new evidence arriving while investigators are on the map.
 - Role‑based dashboards (admin view, field‑investigator view).
@@ -248,7 +248,7 @@ All components reference these variables to guarantee a cohesive, premium experi
 
 ---
 
-## 🏁 License
+## License
 This project is open‑source and available under the **MIT License**.
 
 ---
