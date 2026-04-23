@@ -179,14 +179,15 @@ All endpoints are prefixed with `/api`.
 
 ---
 
-Workflow – Creating a New Investigation
+## Workflow: Creating a New Investigation
+
 ```mermaid
 flowchart TD
     A[Click "New Case" button] --> B[Open NewCaseModal]
     B --> C[Enter Title, Priority, Brief Description]
     C --> D[Add Evidence Items]
     D --> D1[Upload Image]
-    D1 --> D2[Write per‑image forensic description]
+    D1 --> D2[Write per-image forensic description]
     D2 --> D3[Add More Evidence?]
     D3 -->|Yes| D1
     D3 -->|No| E[Submit]
