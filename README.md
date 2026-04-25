@@ -110,8 +110,8 @@ CrimeLens/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/CrimeLens.git
-cd CrimeLens
+git clone https://github.com/Abhay172005/Crime_Lens.git
+cd Crime_Lens
 
 # Install server dependencies
 cd server && npm install && cd ..
@@ -455,4 +455,4 @@ The UI uses a custom CSS variable system for consistent theming across all compo
 
 ## License
 
-This project is open-source and available under the MIT License.
+TThis project is intended for educational and research purposes.
